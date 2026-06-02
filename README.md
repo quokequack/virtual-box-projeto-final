@@ -68,3 +68,6 @@ Configurações das interfaces de rede e Definição de Nomes e Domínio
     </td>
   </tr>
 </table>
+
+### Links importantes
+https://github.com/alaelson/labredes_virtualbox/blob/main/Aula1.md
