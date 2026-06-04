@@ -12,6 +12,10 @@ amd64&lts=true"> site oficial; </a> </li>
   </li>
   <li> Iniciar a máquina virtual e realizar a instalação manual do ubuntu </li>
   <li> Configurar idioma e teclado </li>
+  <li> Usar configuração de rede padrão </li>
   <li> Sem proxy </li>
   <li> Selecionar todas as opções de pacotes extra (incluindo network) </li>
+  <li> Finalizar a instalação selecionando o layout do teclado e idioma </li>
+  <li> Após isso, a máquina precisará ser reiniciada para o ubuntu finalizar a instalação </li>
 </ol>
+<i> Ao fim, máquina criada! </i>
