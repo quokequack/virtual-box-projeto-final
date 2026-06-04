@@ -15,6 +15,7 @@ amd64&lts=true"> site oficial; </a> </li>
   <li> Usar configuração de rede padrão </li>
   <li> Sem proxy </li>
   <li> Selecionar todas as opções de pacotes extra (incluindo network) </li>
+  <li> Inserir as credenciais do administrador (nome, nickname, senha) </li>
   <li> Finalizar a instalação selecionando o layout do teclado e idioma </li>
   <li> Após isso, a máquina precisará ser reiniciada para o ubuntu finalizar a instalação </li>
 </ol>
