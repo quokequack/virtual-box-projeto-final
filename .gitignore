@@ -1,0 +1,5 @@
+# VirtualBox
+*.vdi
+*.vbox
+*.vbox-prev
+VMs/**/Logs/

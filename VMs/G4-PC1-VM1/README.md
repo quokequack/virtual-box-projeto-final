@@ -35,3 +35,9 @@ Ficha individual da máquina virtual no ambiente de rede do Grupo 4.
 ## Configuração aplicada
 
 A configuração seguiu o tutorial em [`../../docs/passo-a-passo.md`](../../docs/passo-a-passo.md).
+
+## Arquivo da VM
+
+Link para download do arquivo `.vdi` no Google Drive:
+
+[Inserir link aqui]()
