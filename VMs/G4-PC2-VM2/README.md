@@ -40,4 +40,4 @@ A configuração seguiu o tutorial em [`../../docs/passo-a-passo.md`](../../docs
 
 Link para a pasta da VM no Google Drive:
 
-[Inserir link aqui]()
+[Link](https://drive.google.com/drive/folders/1UAJBLhrIGHseCpvmjU2KQXwtagc35ct9?usp=sharing)

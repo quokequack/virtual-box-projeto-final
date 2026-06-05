@@ -28,6 +28,7 @@ A documentação está dividida em:
 | [`docs/passo-a-passo.md`](docs/passo-a-passo.md) | Tutorial técnico detalhado de instalação e configuração de cada VM, com a fundamentação de cada decisão. |
 | [`docs/testes.md`](docs/testes.md) | Registro dos resultados dos testes de conectividade (`ping`) e de acesso remoto (`SSH`). |
 | `VMs/G4-PCx-VMy/` | Arquivos de configuração e evidências específicas de cada máquina. |
+| [Google Drive — pasta geral](https://drive.google.com/drive/folders/1NLs84GKqwmIrUsmD_Prp6V6Usudi9iPd?usp=sharing) | Arquivos das VMs (`.vdi`) para download. |
 
 ---
 
