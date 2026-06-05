@@ -26,7 +26,6 @@ A documentação está dividida em:
 |-----------|----------|
 | `README.md` (este arquivo) | Visão geral, integrantes, tabelas de hardware, IPs e nomenclatura, topologia e estrutura do repositório. |
 | [`docs/passo-a-passo.md`](docs/passo-a-passo.md) | Tutorial técnico detalhado de instalação e configuração de cada VM, com a fundamentação de cada decisão. |
-| [`docs/testes.md`](docs/testes.md) | Registro dos resultados dos testes de conectividade (`ping`) e de acesso remoto (`SSH`). |
 | `VMs/G4-PCx-VMy/` | Arquivos de configuração e evidências específicas de cada máquina. |
 | [Google Drive - pasta das VMs](https://drive.google.com/drive/folders/1NLs84GKqwmIrUsmD_Prp6V6Usudi9iPd?usp=sharing) | Arquivos das VMs (`.vdi`) para download. |
 
@@ -138,8 +137,7 @@ virtual-box-projeto-final/
 ├── topologia-projeto.png         # Imagem da topologia da rede
 ├── .gitignore
 ├── docs/
-│   ├── passo-a-passo.md          # Tutorial técnico detalhado
-│   └── testes.md                 # Resultados de ping e SSH
+│   └── passo-a-passo.md          # Tutorial técnico detalhado
 └── VMs/
     ├── G4-PC1-VM1/
     │   └── README.md             # Ficha da VM (hostname, IP, responsável, link do Drive)
