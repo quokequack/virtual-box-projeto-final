@@ -1,4 +1,4 @@
-# G4-PC4-VM2
+# G4-PC3-VM2
 
 Ficha individual da máquina virtual no ambiente de rede do Grupo 4.
 
@@ -6,12 +6,12 @@ Ficha individual da máquina virtual no ambiente de rede do Grupo 4.
 
 | Campo | Valor |
 |-------|-------|
-| Hostname | `g4-pc4-vm2` |
-| FQDN | `g4-pc4-vm2.grupo4-bsi-26-1.maceio.lab` |
-| Apelido (alias) | `g4-pc4-vm2` |
-| Endereço IP | `192.168.26.56/28` |
+| Hostname | `g4-pc3-vm2` |
+| FQDN | `g4-pc3-vm2.grupo4-bsi-26-1.maceio.lab` |
+| Apelido (alias) | `g4-pc3-vm2` |
+| Endereço IP | `192.168.26.54/28` |
 | Sub-rede | `192.168.26.48/28` (255.255.255.240) |
-| Responsável (admin) | Renilson José da Silva Santos (`renilson.santos`) |
+| Responsável (admin) | Maria Luisa Alaquoke Ferreira dos Santos (`maria.santos`) |
 
 ## Hardware
 
@@ -30,14 +30,14 @@ Ficha individual da máquina virtual no ambiente de rede do Grupo 4.
 - `renilson.santos`
 - `administrador` (conta administrativa padrão)
 
-> Membro do grupo `sudo` nesta máquina: **`renilson.santos`**.
+> Membro do grupo `sudo` nesta máquina: **`maria.santos`**.
 
 ## Configuração aplicada
 
-A configuração seguiu o tutorial em [`../../docs/passo-a-passo.md`](../../docs/passo-a-passo.md).
+A configuração seguiu o tutorial em [`../docs/passo-a-passo.md`](../docs/passo-a-passo.md).
 
 ## Arquivo da VM
 
 Link para a pasta da VM no Google Drive:
 
-[Link](https://drive.google.com/drive/folders/11Yu_x1sbnhAJTiaV3IgxQiJ8wp-wpvNX?usp=sharing)
+[Link](https://drive.google.com/drive/folders/1FixzixbtwZvOd8E9bD3AIlwkCsjsTmeJ?usp=sharing)

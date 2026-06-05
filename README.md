@@ -26,7 +26,7 @@ A documentação está dividida em:
 |-----------|----------|
 | `README.md` (este arquivo) | Visão geral, integrantes, tabelas de hardware, IPs e nomenclatura, topologia e estrutura do repositório. |
 | [`docs/passo-a-passo.md`](docs/passo-a-passo.md) | Tutorial técnico detalhado de instalação e configuração de cada VM, com a fundamentação de cada decisão. |
-| `VMs/G4-PCx-VMy/` | Arquivos de configuração e evidências específicas de cada máquina. |
+| `VMs/G4-PCx-VMy.md` | Ficha individual de cada VM (hostname, IP, responsável, link do Drive). |
 | [Google Drive - pasta das VMs](https://drive.google.com/drive/folders/1NLs84GKqwmIrUsmD_Prp6V6Usudi9iPd?usp=sharing) | Arquivos das VMs (`.vdi`) para download. |
 
 ---
@@ -139,25 +139,17 @@ virtual-box-projeto-final/
 ├── docs/
 │   └── passo-a-passo.md          # Tutorial técnico detalhado
 └── VMs/
-    ├── G4-PC1-VM1/
-    │   └── README.md             # Ficha da VM (hostname, IP, responsável, link do Drive)
-    ├── G4-PC1-VM2/
-    │   └── README.md
-    ├── G4-PC2-VM1/
-    │   └── README.md
-    ├── G4-PC2-VM2/
-    │   └── README.md
-    ├── G4-PC3-VM1/
-    │   └── README.md
-    ├── G4-PC3-VM2/
-    │   └── README.md
-    ├── G4-PC4-VM1/
-    │   └── README.md
-    └── G4-PC4-VM2/
-        └── README.md
+    ├── G4-PC1-VM1.md             # Ficha da VM (hostname, IP, responsável, link do Drive)
+    ├── G4-PC1-VM2.md
+    ├── G4-PC2-VM1.md
+    ├── G4-PC2-VM2.md
+    ├── G4-PC3-VM1.md
+    ├── G4-PC3-VM2.md
+    ├── G4-PC4-VM1.md
+    └── G4-PC4-VM2.md
 ```
 
-Cada pasta em `VMs/` contém a ficha individual da máquina com hostname, IP, responsável e link para o arquivo da VM no Google Drive. Os arquivos `.vdi` não são versionados no repositório.
+Cada arquivo em `VMs/` contém a ficha individual da máquina com hostname, IP, responsável e link para a pasta da VM no Google Drive. Os arquivos `.vdi` não são versionados no repositório.
 
 ---
 
