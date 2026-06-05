@@ -1,4 +1,4 @@
-# Passo a passo — Configuração das VMs (Ubuntu Server)
+# Passo a passo - Configuração das VMs (Ubuntu Server)
 
 Este documento descreve, de forma detalhada e fundamentada, o procedimento de instalação e
 configuração aplicado a **cada uma das 8 máquinas virtuais** do Grupo 4. Os comandos são
@@ -58,7 +58,7 @@ sudo apt install language-pack-pt -y
 
 **Por quê?** O `apt update` atualiza a lista de pacotes disponíveis nos repositórios antes
 de qualquer instalação. O `language-pack-pt` adiciona as traduções e a configuração regional
-(locale) em português, padronizando mensagens do sistema — útil em um ambiente acadêmico
+(locale) em português, padronizando mensagens do sistema - útil em um ambiente acadêmico
 local.
 
 ---
@@ -165,42 +165,42 @@ ip route
 
 ### 5.1. Fundamentação de cada parâmetro
 
-- **`renderer: networkd`** — O Netplan é apenas uma *camada de configuração*: ele lê o YAML e
+- **`renderer: networkd`** - O Netplan é apenas uma *camada de configuração*: ele lê o YAML e
   gera a configuração para um *backend* (renderer) que efetivamente gerencia a rede. Há dois
   backends: o **`systemd-networkd`** (`networkd`) e o **`NetworkManager`**. O `NetworkManager`
   é voltado a desktops, com integração gráfica e gerenciamento dinâmico de conexões. O
   **`systemd-networkd` é o padrão e o mais adequado para servidores**: é leve, integrado ao
   `systemd`, não exige interface gráfica e é ideal para hosts headless com endereçamento
-  estático — exatamente o caso deste projeto. Por isso adotamos `renderer: networkd`.
+  estático - exatamente o caso deste projeto. Por isso adotamos `renderer: networkd`.
 
-- **`ens160`** — É o nome da interface de rede. **Atenção:** esse nome depende do hipervisor.
+- **`ens160`** - É o nome da interface de rede. **Atenção:** esse nome depende do hipervisor.
   Em VMware costuma ser `ens160`; no VirtualBox normalmente é `enp0s3` (NAT) ou `enp0s8`
   (rede interna). **Verifique o nome real com `ip a`** e substitua no arquivo, caso seja
   diferente.
 
-- **`dhcp4: no` / `dhcp6: no`** — Desativa a obtenção automática de endereço via DHCP. Um
+- **`dhcp4: no` / `dhcp6: no`** - Desativa a obtenção automática de endereço via DHCP. Um
   servidor precisa de um **IP fixo e previsível**, pois outros hosts o referenciam por
   endereço/nome. Se o IP mudasse a cada inicialização, a resolução de nomes e o acesso SSH
   ficariam inconsistentes.
 
-- **`addresses: - 192.168.26.49/28`** — Define o **endereço IP estático** da VM, já com o
+- **`addresses: - 192.168.26.49/28`** - Define o **endereço IP estático** da VM, já com o
   **prefixo `/28`**, que indica a máscara `255.255.255.240`. O prefixo é obrigatório: é ele
   que informa ao sistema quais endereços pertencem à mesma sub-rede (e, portanto, são
   alcançáveis diretamente em camada de enlace).
 
-- **`nameservers: addresses: [8.8.8.8, 1.1.1.1]`** — Define os servidores **DNS** usados para
+- **`nameservers: addresses: [8.8.8.8, 1.1.1.1]`** - Define os servidores **DNS** usados para
   traduzir nomes de domínio da internet em IPs. Foram escolhidos o DNS público do Google
   (`8.8.8.8`) e o da Cloudflare (`1.1.1.1`), úteis quando a VM precisa baixar pacotes. A
   resolução *entre as VMs* do projeto, porém, é feita localmente pelo `/etc/hosts` (seção 6),
   sem depender de DNS.
 
-- **`optional: true`** — **Este é o parâmetro central da estabilidade do boot.** Por padrão, o
+- **`optional: true`** - **Este é o parâmetro central da estabilidade do boot.** Por padrão, o
   serviço `systemd-networkd-wait-online` faz o sistema **aguardar a interface ficar "online"**
   antes de concluir a inicialização. Quando a VM é movida para uma **rede interna isolada**
   (sem DHCP nem enlace ativo de saída), a interface pode não atingir esse estado, e o boot
   **trava por até ~2 minutos** exibindo a mensagem *"A start job is running for Wait for
   Network to be Configured"*. Ao marcar a interface como `optional: true`, informamos ao
-  `systemd` que ela **não é obrigatória** para o sistema iniciar — assim o boot prossegue
+  `systemd` que ela **não é obrigatória** para o sistema iniciar - assim o boot prossegue
   imediatamente, sem travas, mesmo quando a rede é trocada para o modo interno. Era exatamente
   esse o objetivo da observação "pra não quebrar quando mudar pra rede interna".
 
@@ -273,7 +273,7 @@ sudo usermod -aG sudo andrezza.magalhaes
 ```
 
 **Por quê?** O requisito do projeto determina que **todas** as VMs contenham a conta
-administrativa (`administrador`) e os usuários nomeados de cada integrante — por isso os
+administrativa (`administrador`) e os usuários nomeados de cada integrante - por isso os
 quatro usuários são criados em todas as máquinas. O `usermod -aG sudo` adiciona o responsável
 ao grupo `sudo`, concedendo a ele a capacidade de executar comandos administrativos naquela
 máquina. A opção `-a` (*append*) é essencial: ela **acrescenta** o grupo sem remover os demais

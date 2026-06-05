@@ -1,9 +1,9 @@
-# Projeto Final — Fundamentos de Redes de Computadores
+# Projeto Final - Fundamentos de Redes de Computadores
 
-**Curso:** Bacharelado em Sistemas de Informação (BSI)
-**Turma:** bsi-26-1 (2026.1)
-**Grupo:** 4 (G4)
-**Instituição:** IFAL — Campus Maceió
+**Curso:** Bacharelado em Sistemas de Informação (BSI)  
+**Turma:** bsi-26-1 (2026.1)  
+**Grupo:** 4 (G4)  
+**Instituição:** IFAL - Campus Maceió  
 
 ---
 
@@ -28,7 +28,7 @@ A documentação está dividida em:
 | [`docs/passo-a-passo.md`](docs/passo-a-passo.md) | Tutorial técnico detalhado de instalação e configuração de cada VM, com a fundamentação de cada decisão. |
 | [`docs/testes.md`](docs/testes.md) | Registro dos resultados dos testes de conectividade (`ping`) e de acesso remoto (`SSH`). |
 | `VMs/G4-PCx-VMy/` | Arquivos de configuração e evidências específicas de cada máquina. |
-| [Google Drive — pasta geral](https://drive.google.com/drive/folders/1NLs84GKqwmIrUsmD_Prp6V6Usudi9iPd?usp=sharing) | Arquivos das VMs (`.vdi`) para download. |
+| [Google Drive - pasta das VMs](https://drive.google.com/drive/folders/1NLs84GKqwmIrUsmD_Prp6V6Usudi9iPd?usp=sharing) | Arquivos das VMs (`.vdi`) para download. |
 
 ---
 
@@ -133,15 +133,16 @@ como **apelido (alias)** na resolução local, e o **FQDN** é o nome canônico 
 ## 7. Estrutura do repositório
 
 ```
-labredes-projeto-final/
+virtual-box-projeto-final/
 ├── README.md                     # Este documento (visão geral + tabelas)
-├── topologia-proj.2b.png         # Imagem da topologia (adicionar)
+├── topologia-projeto.png         # Imagem da topologia da rede
+├── .gitignore
 ├── docs/
 │   ├── passo-a-passo.md          # Tutorial técnico detalhado
 │   └── testes.md                 # Resultados de ping e SSH
 └── VMs/
     ├── G4-PC1-VM1/
-    │   └── README.md             # Ficha + evidências da VM
+    │   └── README.md             # Ficha da VM (hostname, IP, responsável, link do Drive)
     ├── G4-PC1-VM2/
     │   └── README.md
     ├── G4-PC2-VM1/
@@ -158,8 +159,7 @@ labredes-projeto-final/
         └── README.md
 ```
 
-Cada pasta em `VMs/` contém a ficha individual da máquina (hostname, IP, responsável) e pode
-armazenar capturas de tela, o `netplan` aplicado e os logs de teste daquela VM.
+Cada pasta em `VMs/` contém a ficha individual da máquina com hostname, IP, responsável e link para o arquivo da VM no Google Drive. Os arquivos `.vdi` não são versionados no repositório.
 
 ---
 
@@ -174,7 +174,7 @@ armazenar capturas de tela, o `netplan` aplicado e os logs de teste daquela VM.
 
 ## 9. Referências
 
-- Especificação do Projeto Final — Fundamentos de Redes de Computadores, turma bsi-26-1 (2026.1).
+- Especificação do Projeto Final - Fundamentos de Redes de Computadores, turma bsi-26-1 (2026.1).
 - Repositório de referência da disciplina: <https://github.com/alaelson/labredes_virtualbox/blob/main/projeto-final/README.md>
 - Documentação oficial do Netplan: <https://netplan.io/>
 - Manual do Ubuntu Server: <https://ubuntu.com/server/docs>
