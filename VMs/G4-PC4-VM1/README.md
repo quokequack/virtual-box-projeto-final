@@ -38,6 +38,6 @@ A configuração seguiu o tutorial em [`../../docs/passo-a-passo.md`](../../docs
 
 ## Arquivo da VM
 
-Link para download do arquivo `.vdi` no Google Drive:
+Link para a pasta da VM no Google Drive:
 
 [Inserir link aqui]()
