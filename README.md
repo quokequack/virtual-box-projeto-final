@@ -1,9 +1,13 @@
 # Projeto Final - Fundamentos de Redes de Computadores
 
+**Instituição:** IFAL - Campus Maceió  
+**Disciplina:** Fundamentos de Redes de Computadores  
+**Professor:** [Alaelson de Castro Jatoba Neto](mailto:alaelson@ifal.edu.br)  
 **Curso:** Bacharelado em Sistemas de Informação (BSI)  
 **Turma:** bsi-26-1 (2026.1)  
 **Grupo:** 4 (G4)  
-**Instituição:** IFAL - Campus Maceió  
+
+**Repositório:** [github.com/@quokequack/virtual-box-projeto-final](https://github.com/@quokequack/virtual-box-projeto-final)
 
 ---
 
@@ -26,6 +30,8 @@ A documentação está dividida em:
 |-----------|----------|
 | `README.md` (este arquivo) | Visão geral, integrantes, tabelas de hardware, IPs e nomenclatura, topologia e estrutura do repositório. |
 | [`docs/passo-a-passo.md`](docs/passo-a-passo.md) | Tutorial técnico detalhado de instalação e configuração de cada VM, com a fundamentação de cada decisão. |
+| [`docs/testes-ping.md`](docs/testes-ping.md) | Resultados dos testes de conectividade (ping) entre VMs por IP e FQDN. |
+| [`docs/testes-ssh.md`](docs/testes-ssh.md) | Resultados dos testes de acesso remoto (SSH) com hostnames e usuários criados. |
 | `VMs/G4-PCx-VMy.md` | Ficha individual de cada VM (hostname, IP, responsável, link do Drive). |
 | [Google Drive - pasta das VMs](https://drive.google.com/drive/folders/1NLs84GKqwmIrUsmD_Prp6V6Usudi9iPd?usp=sharing) | Arquivos das VMs (`.vdi`) para download. |
 
@@ -33,12 +39,12 @@ A documentação está dividida em:
 
 ## 2. Integrantes do grupo
 
-| Nome completo | Usuário (login) | Máquinas sob responsabilidade |
-|---------------|-----------------|-------------------------------|
-| Andrezza Abreu de Magalhães | `andrezza.magalhaes` | G4-PC1-VM1, G4-PC1-VM2 |
-| Isaque de Souza Braga | `isaque.braga` | G4-PC2-VM1, G4-PC2-VM2 |
-| Maria Luisa Alaquoke Ferreira dos Santos | `maria.santos` | G4-PC3-VM1, G4-PC3-VM2 |
-| Renilson José da Silva Santos | `renilson.santos` | G4-PC4-VM1, G4-PC4-VM2 |
+| Nome completo | Usuário (login) | E-mail | GitHub | Máquinas |
+|---------------|-----------------|--------|--------|----------|
+| Andrezza Abreu de Magalhães | `andrezza.magalhaes` | aam6@aluno.ifal.edu.br | [@dzzabreu](https://github.com/dzzabreu) | G4-PC1-VM1, G4-PC1-VM2 |
+| Isaque de Souza Braga | `isaque.braga` | isb15@aluno.ifal.edu.br | [@isaquebraga](https://github.com/isaquebraga) | G4-PC2-VM1, G4-PC2-VM2 |
+| Maria Luisa Alaquoke Ferreira dos Santos | `maria.santos` | mlafs2@aluno.ifal.edu.br | [@quokequack](https://github.com/quokequack) | G4-PC3-VM1, G4-PC3-VM2 |
+| Renilson José da Silva Santos | `renilson.santos` | rjss7@aluno.ifal.edu.br | [@renilsou](https://github.com/renilsou) | G4-PC4-VM1, G4-PC4-VM2 |
 
 > Cada integrante é o **administrador** (membro do grupo `sudo`) das duas máquinas sob sua
 > responsabilidade. Ainda assim, em **todas** as VMs são criados os usuários de **todos**
@@ -63,8 +69,8 @@ servidor leve (Ubuntu Server, sem ambiente gráfico):
 
 | Recurso | Especificação | Justificativa |
 |---------|---------------|---------------|
-| Memória RAM | 512 MB | Suficiente para o Ubuntu Server em modo texto e os serviços do projeto (SSH), preservando recursos do hospedeiro para executar 8 VMs simultaneamente. |
-| Processador | 1 vCPU (1 núcleo) | Carga de trabalho baixa; não há serviços de uso intensivo de CPU. |
+| Memória RAM | 2048 MB (2 GB) | Adequado para o Ubuntu Server em modo texto e os serviços do projeto (SSH), permitindo operações mais fluidas. |
+| Processador | 2 vCPU (2 núcleos) | Garante melhor desempenho em operações do sistema e processamento de múltiplas conexões SSH simultâneas. |
 | Disco | 32 GB | Acomoda o sistema base, pacotes adicionais (idioma, SSH) e margem para logs. |
 | Sistema operacional | Ubuntu Server | Distribuição voltada a servidores, sem interface gráfica, alinhada ao objetivo do projeto. |
 | Interface de rede | 1 adaptador (rede interna do hipervisor) | Conecta as VMs na mesma sub-rede isolada. |
@@ -137,9 +143,15 @@ virtual-box-projeto-final/
 ├── topologia-projeto.png         # Imagem da topologia da rede
 ├── .gitignore
 ├── docs/
-│   └── passo-a-passo.md          # Tutorial técnico detalhado
+│   ├── passo-a-passo.md          # Tutorial técnico detalhado
+│   ├── testes-ping.md            # Resultados dos testes de conectividade (ping)
+│   └── testes-ssh.md             # Resultados dos testes de acesso remoto (SSH)
+├── evidencias/                   # Capturas de tela dos testes
+│   ├── README.md                 # Guia para adicionar imagens
+│   ├── ping-*.png                # Screenshots dos testes de ping
+│   └── ssh-*.png                 # Screenshots dos testes de SSH
 └── VMs/
-    ├── G4-PC1-VM1.md             # Ficha da VM (hostname, IP, responsável, link do Drive)
+    ├── G4-PC1-VM1.md             # Ficha da VM
     ├── G4-PC1-VM2.md
     ├── G4-PC2-VM1.md
     ├── G4-PC2-VM2.md
@@ -150,6 +162,8 @@ virtual-box-projeto-final/
 ```
 
 Cada arquivo em `VMs/` contém a ficha individual da máquina com hostname, IP, responsável e link para a pasta da VM no Google Drive. Os arquivos `.vdi` não são versionados no repositório.
+
+A pasta `evidencias/` contém os screenshots dos testes, com um guia de nomenclatura e instruções de como adicionar as imagens nos arquivos `.md`.
 
 ---
 

@@ -1,7 +1,7 @@
 # Passo a passo - Configuração das VMs (Ubuntu Server)
 
 Este documento descreve, de forma detalhada e fundamentada, o procedimento de instalação e
-configuração aplicado a **cada uma das 8 máquinas virtuais** do Grupo 4. Os comandos são
+configuração que deve ser aplicado a **cada uma das 8 máquinas virtuais** do Grupo 4. Os comandos são
 idênticos para todas as VMs; alteram-se apenas os valores específicos de cada máquina
 (**hostname**, **IP** e **responsável**), indicados entre colchetes `[ ]`.
 
@@ -12,7 +12,7 @@ idênticos para todas as VMs; alteram-se apenas os valores específicos de cada 
 
 ## 0. Pré-requisitos e credenciais
 
-Durante a instalação do Ubuntu Server, foi criada a conta administrativa padrão:
+Durante a instalação do Ubuntu Server, deve ser criada a conta administrativa padrão:
 
 - **Login:** `administrador`
 - **Senha:** `adminifal`
@@ -28,15 +28,14 @@ seguinte configuração de hardware:
 
 | Recurso | Valor |
 |---------|-------|
-| Memória RAM | 512 MB |
-| Processadores | 1 vCPU (1 núcleo) |
+| Memória RAM | 2048 MB (2 GB) |
+| Processadores | 2 vCPU (2 núcleos) |
 | Disco | 32 GB |
 | ISO | Ubuntu Server |
 
 **Por quê esse dimensionamento?** O Ubuntu Server opera em modo texto (sem ambiente
-gráfico), de modo que 512 MB de RAM e 1 núcleo são suficientes para o sistema e o serviço
-SSH. Como o hospedeiro precisa executar 8 VMs ao mesmo tempo, manter cada uma enxuta evita
-sobrecarga de memória e CPU no computador físico.
+gráfico). Com 2 GB de RAM e 2 núcleos, o sistema e o serviço SSH funcionam de forma estável e responsiva.
+Esta configuração permite um bom desempenho mesmo com 8 VMs simultâneas no hospedeiro.
 
 ---
 
@@ -151,7 +150,7 @@ network:
         - 192.168.26.49/28
       nameservers:
         addresses: [8.8.8.8, 1.1.1.1]
-      optional: true   # evita que o boot trave ao mudar para a rede interna
+      optional: true  
 ```
 
 Aplique e valide:
