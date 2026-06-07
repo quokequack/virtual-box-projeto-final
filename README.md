@@ -7,7 +7,7 @@
 **Turma:** bsi-26-1 (2026.1)  
 **Grupo:** 4 (G4)  
 
-**Repositório:** [github.com/@quokequack/virtual-box-projeto-final](https://github.com/@quokequack/virtual-box-projeto-final)
+**Repositório:** [github.com/quokequack/virtual-box-projeto-final](https://github.com/@quokequack/virtual-box-projeto-final)
 
 ---
 
