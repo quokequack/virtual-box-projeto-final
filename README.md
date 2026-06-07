@@ -33,7 +33,7 @@ A documentação está dividida em:
 | [`docs/testes-ping.md`](docs/testes-ping.md) | Resultados dos testes de conectividade (ping) entre VMs por IP e FQDN. |
 | [`docs/testes-ssh.md`](docs/testes-ssh.md) | Resultados dos testes de acesso remoto (SSH) com hostnames e usuários criados. |
 | `VMs/G4-PCx-VMy.md` | Ficha individual de cada VM (hostname, IP, responsável, link do Drive). |
-| [Google Drive - pasta das VMs](https://drive.google.com/drive/folders/1NLs84GKqwmIrUsmD_Prp6V6Usudi9iPd?usp=sharing) | Arquivos das VMs (`.vdi`) para download. |
+| [Google Drive - pasta das VMs](https://drive.google.com/drive/folders/1p69GdlGW5U2qTsmPozNy9VVHgqpojhB-?usp=sharing) | Arquivos das VMs (`.vdi`) para download. |
 
 ---
 
