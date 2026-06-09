@@ -165,12 +165,96 @@ ping -c 4 g4-pc3-vm1.grupo4-bsi-26-1.maceio.lab
 
 ---
 
-## 5. Resumo
+## 5. Testes aleatórios adicionais
 
-**Total de testes:** 12 prints (um de cada origem para 3 destinos aleatórios)
+Testes avulsos sem padrão fixo, cobrindo as VM2s e pares ainda não contemplados nas seções anteriores. Cada teste usa apenas um tipo de identificação (IP, hostname ou FQDN) para demonstrar que qualquer formato funciona em qualquer direção.
+
+**G4-PC1-VM2 → G4-PC4-VM1** (IP)
+
+```bash
+ping -c 4 192.168.26.55
+```
+
+![G4-PC1-VM2 → G4-PC4-VM1 (IP)](../evidencias/ping-g4pc1vm2-g4pc4vm1-ip.png)
+
+---
+
+**G4-PC2-VM2 → G4-PC3-VM1** (FQDN)
+
+```bash
+ping -c 4 g4-pc3-vm1.grupo4-bsi-26-1.maceio.lab
+```
+
+![G4-PC2-VM2 → G4-PC3-VM1 (FQDN)](../evidencias/ping-g4pc2vm2-g4pc3vm1-fqdn.png)
+
+---
+
+**G4-PC3-VM2 → G4-PC1-VM1** (hostname)
+
+```bash
+ping -c 4 g4-pc1-vm1
+```
+
+![G4-PC3-VM2 → G4-PC1-VM1 (hostname)](../evidencias/ping-g4pc3vm2-g4pc1vm1-hostname.png)
+
+---
+
+**G4-PC4-VM2 → G4-PC2-VM1** (IP)
+
+```bash
+ping -c 4 192.168.26.51
+```
+
+![G4-PC4-VM2 → G4-PC2-VM1 (IP)](../evidencias/ping-g4pc4vm2-g4pc2vm1-ip.png)
+
+---
+
+**G4-PC1-VM1 → G4-PC1-VM2** (hostname)
+
+```bash
+ping -c 4 g4-pc1-vm2
+```
+
+![G4-PC1-VM1 → G4-PC1-VM2 (hostname)](../evidencias/ping-g4pc1vm1-g4pc1vm2-hostname.png)
+
+---
+
+**G4-PC3-VM1 → G4-PC4-VM2** (FQDN)
+
+```bash
+ping -c 4 g4-pc4-vm2.grupo4-bsi-26-1.maceio.lab
+```
+
+![G4-PC3-VM1 → G4-PC4-VM2 (FQDN)](../evidencias/ping-g4pc3vm1-g4pc4vm2-fqdn.png)
+
+---
+
+**G4-PC2-VM1 → G4-PC2-VM2** (IP)
+
+```bash
+ping -c 4 192.168.26.52
+```
+
+![G4-PC2-VM1 → G4-PC2-VM2 (IP)](../evidencias/ping-g4pc2vm1-g4pc2vm2-ip.png)
+
+---
+
+**G4-PC4-VM1 → G4-PC3-VM2** (hostname)
+
+```bash
+ping -c 4 g4-pc3-vm2
+```
+
+![G4-PC4-VM1 → G4-PC3-VM2 (hostname)](../evidencias/ping-g4pc4vm1-g4pc3vm2-hostname.png)
+
+---
+
+## 6. Resumo
+
+**Total de testes:** 20 prints (12 originais + 8 aleatórios adicionais)
 
 Todos os testes de ping foram bem-sucedidos, demonstrando:
-- ✅ Conectividade entre todas as VMs
+- ✅ Conectividade entre todas as VMs (VM1s e VM2s)
 - ✅ Resolução de nomes funcionando corretamente (hostname)
 - ✅ Resolução FQDN funcionando corretamente
 - ✅ Mapeamento IP/hostname/FQDN consistente no `/etc/hosts`
