@@ -17,8 +17,8 @@ Ficha individual da máquina virtual no ambiente de rede do Grupo 4.
 
 | Recurso | Valor |
 |---------|-------|
-| RAM | 512 MB |
-| vCPU | 1 núcleo |
+| RAM | 2048 MB (2 GB) |
+| vCPU | 2 núcleos |
 | Disco | 32 GB |
 | SO | Ubuntu Server |
 
