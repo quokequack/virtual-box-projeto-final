@@ -33,7 +33,7 @@ A documentação está dividida em:
 | [`docs/testes-ping.md`](docs/testes-ping.md) | Resultados dos testes de conectividade (ping) entre VMs por IP e FQDN. |
 | [`docs/testes-ssh.md`](docs/testes-ssh.md) | Resultados dos testes de acesso remoto (SSH) com hostnames e usuários criados. |
 | `VMs/G4-PCx-VMy.md` | Ficha individual de cada VM (hostname, IP, responsável, link do Drive). |
-| [Google Drive - pasta das VMs](https://drive.google.com/drive/folders/1p69GdlGW5U2qTsmPozNy9VVHgqpojhB-?usp=sharing) | Arquivos das VMs (`.vdi`) para download. |
+| [Google Drive - pasta das VMs](https://drive.google.com/drive/folders/1p69GdlGW5U2qTsmPozNy9VVHgqpojhB-?usp=sharing) | Arquivos das VMs nos formatos `.ova` e `.vdi` para download. |
 
 ---
 
@@ -161,7 +161,7 @@ virtual-box-projeto-final/
     └── G4-PC4-VM2.md
 ```
 
-Cada arquivo em `VMs/` contém a ficha individual da máquina com hostname, IP, responsável e link para a pasta da VM no Google Drive. Os arquivos `.vdi` não são versionados no repositório.
+Cada arquivo em `VMs/` contém a ficha individual da máquina com hostname, IP, responsável e link para a pasta da VM no Google Drive. Os arquivos `.ova` e `.vdi` não são versionados no repositório - cada pasta no Drive contém os dois formatos.
 
 A pasta `evidencias/` contém os screenshots dos testes, com um guia de nomenclatura e instruções de como adicionar as imagens nos arquivos `.md`.
 
