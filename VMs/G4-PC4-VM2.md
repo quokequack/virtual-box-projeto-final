@@ -38,6 +38,8 @@ A configuração seguiu o tutorial em [`../docs/passo-a-passo.md`](../docs/passo
 
 ## Arquivo da VM
 
-Link para a pasta da VM no Google Drive:
+Pasta da VM no Google Drive com os arquivos para download:
 
-[Link](https://drive.google.com/drive/folders/11iDYjUwpGcPf6mVy7Pqkk9ZEG3oiZ4Ir?usp=sharing)
+[Acessar pasta no Google Drive](https://drive.google.com/drive/folders/11iDYjUwpGcPf6mVy7Pqkk9ZEG3oiZ4Ir?usp=sharing)
+
+> A pasta contém a VM exportada nos formatos **`.ova`** (requisito do professor) e **`.vdi`**.
