@@ -254,7 +254,7 @@ ping -c 4 g4-pc3-vm2
 **Total de testes:** 20 prints (12 originais + 8 aleatórios adicionais)
 
 Todos os testes de ping foram bem-sucedidos, demonstrando:
-- ✅ Conectividade entre todas as VMs (VM1s e VM2s)
+- ✅ Conectividade entre todas as VMs
 - ✅ Resolução de nomes funcionando corretamente (hostname)
 - ✅ Resolução FQDN funcionando corretamente
 - ✅ Mapeamento IP/hostname/FQDN consistente no `/etc/hosts`
