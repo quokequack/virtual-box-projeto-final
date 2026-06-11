@@ -349,7 +349,7 @@ ssh isaque.braga@g4-pc2-vm1.grupo4-bsi-26-1.maceio.lab
 
 ## 10. Resumo do fluxo
 
-1. Criar a VM (512 MB / 1 vCPU / 32 GB) e instalar o Ubuntu Server.
+1. Criar a VM (2 GB / 2 vCPUs / 32 GB) e instalar o Ubuntu Server.
 2. Configurar idioma (`language-pack-pt`) e teclado (`br`/`abnt2`).
 3. Definir o hostname com `hostnamectl`.
 4. Configurar IP estático no Netplan (`networkd`, `dhcp4: no`, `/28`, `optional: true`).
