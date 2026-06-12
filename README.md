@@ -39,16 +39,17 @@ A documentação está dividida em:
 
 ## 2. Integrantes do grupo
 
-| Nome completo | Usuário (login) | E-mail | GitHub | Máquinas |
-|---------------|-----------------|--------|--------|----------|
-| Andrezza Abreu de Magalhães | `andrezza.magalhaes` | aam6@aluno.ifal.edu.br | [@dzzabreu](https://github.com/dzzabreu) | G4-PC1-VM1, G4-PC1-VM2 |
-| Isaque de Souza Braga | `isaque.braga` | isb15@aluno.ifal.edu.br | [@isaquebraga](https://github.com/isaquebraga) | G4-PC2-VM1, G4-PC2-VM2 |
-| Maria Luisa Alaquoke Ferreira dos Santos | `maria.santos` | mlafs2@aluno.ifal.edu.br | [@quokequack](https://github.com/quokequack) | G4-PC3-VM1, G4-PC3-VM2 |
-| Renilson José da Silva Santos | `renilson.santos` | rjss7@aluno.ifal.edu.br | [@renilsou](https://github.com/renilsou) | G4-PC4-VM1, G4-PC4-VM2 |
+| Nome completo | Usuário (login) | Senha | E-mail | GitHub | Máquinas |
+|---------------|-----------------|-------|--------|--------|----------|
+| Andrezza Abreu de Magalhães | `andrezza.magalhaes` | `andrezza` | aam6@aluno.ifal.edu.br | [@dzzabreu](https://github.com/dzzabreu) | G4-PC1-VM1, G4-PC1-VM2 |
+| Isaque de Souza Braga | `isaque.braga` | `isaque` | isb15@aluno.ifal.edu.br | [@isaquebraga](https://github.com/isaquebraga) | G4-PC2-VM1, G4-PC2-VM2 |
+| Maria Luisa Alaquoke Ferreira dos Santos | `maria.santos` | `maria` | mlafs2@aluno.ifal.edu.br | [@quokequack](https://github.com/quokequack) | G4-PC3-VM1, G4-PC3-VM2 |
+| Renilson José da Silva Santos | `renilson.santos` | `renilson` | rjss7@aluno.ifal.edu.br | [@renilsou](https://github.com/renilsou) | G4-PC4-VM1, G4-PC4-VM2 |
 
 > Cada integrante é o **administrador** (membro do grupo `sudo`) das duas máquinas sob sua
 > responsabilidade. Ainda assim, em **todas** as VMs são criados os usuários de **todos**
-> os integrantes, conforme exigência do projeto.
+> os integrantes, conforme exigência do projeto. A conta `administrador` (padrão do grupo)
+> está presente em todas as VMs com a senha `adminifal`.
 
 ---
 
@@ -137,29 +138,26 @@ como **apelido (alias)** na resolução local, e o **FQDN** é o nome canônico 
 
 ## 7. Estrutura do repositório
 
-```
-virtual-box-projeto-final/
-├── README.md                     # Este documento (visão geral + tabelas)
-├── topologia-projeto.png         # Imagem da topologia da rede
-├── .gitignore
-├── docs/
-│   ├── passo-a-passo.md          # Tutorial técnico detalhado
-│   ├── testes-ping.md            # Resultados dos testes de conectividade (ping)
-│   └── testes-ssh.md             # Resultados dos testes de acesso remoto (SSH)
-├── evidencias/                   # Capturas de tela dos testes
-│   ├── README.md                 # Guia para adicionar imagens
-│   ├── ping-*.png                # Screenshots dos testes de ping
-│   └── ssh-*.png                 # Screenshots dos testes de SSH
-└── VMs/
-    ├── G4-PC1-VM1.md             # Ficha da VM
-    ├── G4-PC1-VM2.md
-    ├── G4-PC2-VM1.md
-    ├── G4-PC2-VM2.md
-    ├── G4-PC3-VM1.md
-    ├── G4-PC3-VM2.md
-    ├── G4-PC4-VM1.md
-    └── G4-PC4-VM2.md
-```
+- [`README.md`](README.md) — Este documento (visão geral + tabelas)
+- [`topologia-projeto.png`](topologia-projeto.png) — Imagem da topologia da rede
+- [`.gitignore`](.gitignore)
+- [`docs/`](docs/)
+  - [`passo-a-passo.md`](docs/passo-a-passo.md) — Tutorial técnico detalhado
+  - [`testes-ping.md`](docs/testes-ping.md) — Resultados dos testes de conectividade (ping)
+  - [`testes-ssh.md`](docs/testes-ssh.md) — Resultados dos testes de acesso remoto (SSH)
+- [`evidencias/`](evidencias/) — Capturas de tela dos testes
+  - [`README.md`](evidencias/README.md) — Guia para adicionar imagens
+  - `ping-*.png` — Screenshots dos testes de ping
+  - `ssh-*.png` — Screenshots dos testes de SSH
+- [`VMs/`](VMs/)
+  - [`G4-PC1-VM1.md`](VMs/G4-PC1-VM1.md) — Ficha da VM
+  - [`G4-PC1-VM2.md`](VMs/G4-PC1-VM2.md)
+  - [`G4-PC2-VM1.md`](VMs/G4-PC2-VM1.md)
+  - [`G4-PC2-VM2.md`](VMs/G4-PC2-VM2.md)
+  - [`G4-PC3-VM1.md`](VMs/G4-PC3-VM1.md)
+  - [`G4-PC3-VM2.md`](VMs/G4-PC3-VM2.md)
+  - [`G4-PC4-VM1.md`](VMs/G4-PC4-VM1.md)
+  - [`G4-PC4-VM2.md`](VMs/G4-PC4-VM2.md)
 
 Cada arquivo em `VMs/` contém a ficha individual da máquina com hostname, IP, responsável e link para a pasta da VM no Google Drive. Os arquivos `.ova` e `.vdi` não são versionados no repositório - cada pasta no Drive contém os dois formatos.
 

@@ -147,7 +147,7 @@ network:
       dhcp4: no
       dhcp6: no
       addresses:
-        - 192.168.26.49/28
+        - [ip]
       nameservers:
         addresses: [8.8.8.8, 1.1.1.1]
       optional: true  

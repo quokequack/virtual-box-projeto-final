@@ -24,13 +24,54 @@ Ficha individual da máquina virtual no ambiente de rede do Grupo 4.
 
 ## Usuários criados nesta VM
 
-- `andrezza.magalhaes`
-- `isaque.braga`
-- `maria.santos`
-- `renilson.santos`
-- `administrador` (conta administrativa padrão)
+| Usuário | Senha |
+|---------|-------|
+| `andrezza.magalhaes` | `andrezza` |
+| `isaque.braga` | `isaque` |
+| `maria.santos` | `maria` |
+| `renilson.santos` | `renilson` |
+| `administrador` | `adminifal` |
 
 > Membro do grupo `sudo` nesta máquina: **`isaque.braga`**.
+
+## Configuração de rede
+
+### Netplan (`/etc/netplan/00-installer-config.yaml`)
+
+```yaml
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens160:
+      dhcp4: no
+      dhcp6: no
+      addresses:
+        - 192.168.26.52/28
+      nameservers:
+        addresses: [8.8.8.8, 1.1.1.1]
+      optional: true
+```
+
+### `/etc/hosts`
+
+```bash
+sudo nano /etc/hosts
+```
+
+```text
+127.0.0.1   localhost
+127.0.1.1   g4-pc2-vm2.grupo4-bsi-26-1.maceio.lab   g4-pc2-vm2
+
+192.168.26.49   g4-pc1-vm1.grupo4-bsi-26-1.maceio.lab   g4-pc1-vm1
+192.168.26.50   g4-pc1-vm2.grupo4-bsi-26-1.maceio.lab   g4-pc1-vm2
+192.168.26.51   g4-pc2-vm1.grupo4-bsi-26-1.maceio.lab   g4-pc2-vm1
+192.168.26.52   g4-pc2-vm2.grupo4-bsi-26-1.maceio.lab   g4-pc2-vm2
+192.168.26.53   g4-pc3-vm1.grupo4-bsi-26-1.maceio.lab   g4-pc3-vm1
+192.168.26.54   g4-pc3-vm2.grupo4-bsi-26-1.maceio.lab   g4-pc3-vm2
+192.168.26.55   g4-pc4-vm1.grupo4-bsi-26-1.maceio.lab   g4-pc4-vm1
+192.168.26.56   g4-pc4-vm2.grupo4-bsi-26-1.maceio.lab   g4-pc4-vm2
+```
 
 ## Configuração aplicada
 
