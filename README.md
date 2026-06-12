@@ -138,19 +138,19 @@ como **apelido (alias)** na resolução local, e o **FQDN** é o nome canônico 
 
 ## 7. Estrutura do repositório
 
-- [`README.md`](README.md) — Este documento (visão geral + tabelas)
-- [`topologia-projeto.png`](topologia-projeto.png) — Imagem da topologia da rede
+- [`README.md`](README.md) - Este documento (visão geral + tabelas)
+- [`topologia-projeto.png`](topologia-projeto.png) - Imagem da topologia da rede
 - [`.gitignore`](.gitignore)
 - [`docs/`](docs/)
-  - [`passo-a-passo.md`](docs/passo-a-passo.md) — Tutorial técnico detalhado
-  - [`testes-ping.md`](docs/testes-ping.md) — Resultados dos testes de conectividade (ping)
-  - [`testes-ssh.md`](docs/testes-ssh.md) — Resultados dos testes de acesso remoto (SSH)
-- [`evidencias/`](evidencias/) — Capturas de tela dos testes
-  - [`README.md`](evidencias/README.md) — Guia para adicionar imagens
-  - `ping-*.png` — Screenshots dos testes de ping
-  - `ssh-*.png` — Screenshots dos testes de SSH
+  - [`passo-a-passo.md`](docs/passo-a-passo.md) - Tutorial técnico detalhado
+  - [`testes-ping.md`](docs/testes-ping.md) - Resultados dos testes de conectividade (ping)
+  - [`testes-ssh.md`](docs/testes-ssh.md) - Resultados dos testes de acesso remoto (SSH)
+- [`evidencias/`](evidencias/) - Capturas de tela dos testes
+  - [`README.md`](evidencias/README.md) - Guia para adicionar imagens
+  - `ping-*.png` - Screenshots dos testes de ping
+  - `ssh-*.png` - Screenshots dos testes de SSH
 - [`VMs/`](VMs/)
-  - [`G4-PC1-VM1.md`](VMs/G4-PC1-VM1.md) — Ficha da VM
+  - [`G4-PC1-VM1.md`](VMs/G4-PC1-VM1.md) - Ficha da VM
   - [`G4-PC1-VM2.md`](VMs/G4-PC1-VM2.md)
   - [`G4-PC2-VM1.md`](VMs/G4-PC2-VM1.md)
   - [`G4-PC2-VM2.md`](VMs/G4-PC2-VM2.md)
